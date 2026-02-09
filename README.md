@@ -15,16 +15,33 @@ Memories are stored in the cloud via OpenSink's API — they survive restarts, w
 
 ## Install
 
+### From ClawHub
+
+```bash
+clawhub install opensink-memory
+```
+
+### From GitHub
+
 ```bash
 openclaw skills install github:opensinkai/opensink-openclaw-memory
 ```
 
-Or clone and install locally:
+### Manual (direct installation)
+
+Clone the repo and copy the skill folder into your OpenClaw skills directory:
 
 ```bash
 git clone https://github.com/opensinkai/opensink-openclaw-memory.git
-openclaw skills install ./opensink-openclaw-memory
+
+# Per-agent (workspace only):
+cp -r opensink-openclaw-memory <workspace>/skills/opensink-memory
+
+# Or global (all agents):
+cp -r opensink-openclaw-memory ~/.openclaw/skills/opensink-memory
 ```
+
+OpenClaw picks up the skill automatically on the next session — no install command needed.
 
 ## Setup
 
@@ -74,7 +91,7 @@ bash scripts/opensink-memory.sh get <item-id>
 
 ## Requirements
 
-- `curl` and `python3` (no npm dependencies)
+- `curl` (no other dependencies)
 - An [OpenSink](https://opensink.com) account with API access
 
 ## License

@@ -2,6 +2,7 @@
 name: opensink-memory
 displayName: OpenSink Memory
 description: Store and retrieve agent memories using OpenSink Sinks. Use when the agent needs to remember something persistently, recall past decisions/context/facts, search memories, or when the user says "remember this" and you want durable cloud-backed memory. Also use to list or browse stored memories.
+metadata: {"openclaw":{"emoji":"🧠","requires":{"bins":["curl"],"env":["OPENSINK_API_KEY"]}}}
 ---
 
 # OpenSink Memory
