@@ -13,7 +13,7 @@ set -euo pipefail
 : "${OPENSINK_API_KEY:?Set OPENSINK_API_KEY}"
 : "${OPENSINK_SINK_ID:?Set OPENSINK_SINK_ID}"
 
-BASE_URL="${OPENSINK_URL:-https://api.opensink.com}"
+BASE_URL="${OPENSINK_URL:-https://api.opensink.com/api/v1}"
 AUTH="Authorization: Bearer ${OPENSINK_API_KEY}"
 CT="Content-Type: application/json"
 
